@@ -13,7 +13,7 @@ html {
  * Body rules
  */
 body {
-  font: 1em/1.35 $text-font-stack;
+  font: 1em/1.35 $font-family-sans;
   overflow: auto;
   margin: 0;
 }
@@ -27,9 +27,9 @@ a {
   color: $primary-color;
 
   &:hover {
-    &, code {
-      color: $black;
-    }
+	&, code {
+	  color: $black;
+	}
   }
 }
 
@@ -54,28 +54,28 @@ table p {
  */
 @include respond-to('small') {
   table, tbody, tr, td, th {
-    display: block;
+	display: block;
   }
 
   thead {
-    @include visually-hidden($extend: false);
+	@include visually-hidden($extend: false);
   }
 
   tr {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    border-bottom: 2px solid $medium-grey;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	border-bottom: 2px solid $medium-grey;
   }
 
   td, th {
-    &::before {
-      content: attr(data-label) ': ';
-      text-transform: capitalize;
-      font-weight: bold;
-    }
+	&::before {
+	  content: attr(data-label) ': ';
+	  text-transform: capitalize;
+	  font-weight: bold;
+	}
 
-    p {
-      display: inline;
-    }
+	p {
+	  display: inline;
+	}
   }
 }
