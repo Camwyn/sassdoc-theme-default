@@ -2,45 +2,45 @@
  * Lists
  */
 .list-unstyled {
-  padding-left: 0;
-  list-style: none;
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: $vertical-rhythm;
+	line-height: 1.5;
+	list-style: none;
+	margin-bottom: $vertical-rhythm;
+	margin-top: 0;
+	padding-left: 0;
 }
 
 .list-inline li {
-  @include inline-block;
+	@include inline-block;
 }
 
 /**
  * Main container
  */
 .container {
-  @include clearfix;
-  max-width: 100%;
-  width: 1170px;
-  margin: 0 auto;
-  padding: 0 2rem;
+	@include clearfix;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 0 2rem;
+	width: 1170px;
 }
 
 /**
  * Visually-hidden
  */
 .visually-hidden {
-  @include visually-hidden;
+	@include visually-hidden;
 }
 
 /**
  * Relative
  */
 .relative {
-  position: relative;
+	position: relative;
 }
 
 /**
  * Clear
  */
 .clear {
-  clear: both;
+	clear: both;
 }

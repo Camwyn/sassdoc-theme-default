@@ -6,7 +6,7 @@
   position: relative;
 
   @include respond-to('medium') {
-    transition: .2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: .2s cubic-bezier(0.215, .61, .355, 1);
     padding-left: $sidebar-width;
 	padding-top: 4em;
     min-height: 45em;
@@ -77,8 +77,8 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0.15em;
-    height: 0.2em;
+    bottom: .15em;
+    height: .2em;
     background-color: $primary-color;
   }
 }

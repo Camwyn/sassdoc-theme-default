@@ -1,3 +1,3 @@
 module.exports = function (grunt) {
-	grunt.registerTask( 'css', ['scsslint', 'sass'] );
+	grunt.registerTask( 'css', ['sass'] );
 };

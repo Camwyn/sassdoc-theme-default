@@ -5,11 +5,11 @@
   @include respond-to('medium') {
 	@include fixed($top: 0, $bottom: 0, $left: 0);
 	overflow: auto;
-	box-shadow: 1px 0 1.5px rgba(black, 0.12);
+	box-shadow: 1px 0 1.5px rgba(black, .12);
 	width: $sidebar-width;
 	z-index: z('default') + 1;
 	border-right: 1px solid $light-grey;
-	transition: .2s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: .2s cubic-bezier(0.215, .61, .355, 1);
   }
   @include respond-to('small') {
 	margin-top: 4em;
@@ -31,10 +31,10 @@ $level-3: $level-2 + 2em;
  * Sidebar items
  */
 .sidebar__item {
-  font-size: 0.9em;
+  font-size: .9em;
 
   a {
-	padding: 0.5em $level-3;
+	padding: .5em $level-3;
 	display: block;
 	text-decoration: none;
 	color: $black;
@@ -64,7 +64,7 @@ $level-3: $level-2 + 2em;
  * List item sub-heading
  */
 .sidebar__item--sub-heading {
-  padding: 0.5em $level-2;
+  padding: .5em $level-2;
 
   a {
 	color: #888;
@@ -83,7 +83,7 @@ $level-3: $level-2 + 2em;
 	content: '\25BC';
 	margin-top: -0.5em;
 	color: $medium-grey;
-	font-size: 0.7em;
+	font-size: .7em;
   }
 
   &.is-collapsed:after {
@@ -135,7 +135,7 @@ $level-3: $level-2 + 2em;
   color: #999;
   font-weight: bold;
   margin: 0;
-  transition: 0.15s ease-out;
+  transition: .15s ease-out;
 
   @include on-event {
 	background: #DFDFDF;

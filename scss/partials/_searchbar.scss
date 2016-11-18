@@ -33,7 +33,7 @@
  */
 .searchbar__field {
   border: none;
-  padding: 0.5em;
+  padding: .5em;
   font-size: 1em;
   margin: 0;
   width: 100%;
@@ -46,7 +46,7 @@
 .searchbar__suggestions {
   @include absolute($top: 100%, $right: 0, $left: 0);
   @include card(1);
-  background: white;
+  background: $white;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -73,8 +73,8 @@
 
   a {
     display: block;
-    padding: 0.5em;
-    font-size: 0.9em;
+    padding: .5em;
+    font-size: .9em;
 
     @include on-event {
       background: $light-grey;

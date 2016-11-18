@@ -1,6 +1,6 @@
 module.exports = {
 	allFiles: {
-		src: 'scss/*.scss'
+		src: 'scss/**/*.scss'
 	},
 	options: {
 		compact: true,
